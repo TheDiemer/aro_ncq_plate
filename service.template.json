@@ -1,0 +1,28 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "aroplate",
+        "creationTimestamp": null,
+        "labels": {
+            "template": "aroplate"
+        }
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 5000,
+                "targetPort": 5000
+            }
+        ],
+        "selector": {
+            "name": "aroplate"
+        },
+        "type": "ClusterIP",
+        "sessionAffinity": "None"
+    },
+    "status": {
+        "loadBalancer": {}
+    }
+}
