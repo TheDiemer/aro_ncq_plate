@@ -8,7 +8,7 @@ import json
 
 
 def main():
-    url = 'https://hydra.ext.paas.redhat.com/hydra/rest/cases/?status=Waiting%'
+    url = 'https://access.redhat.com/hydra/rest/cases/?status=Waiting%'
     url += '20on%20Red%20Hat%2CWaiting%20on%20Customer&sbrGroups=Shift%20Hoste'
     url += 'd&fields=caseNumber,contact.timezone,tags,subject,strategic,initia'
     url += 'lServiceLevel,severity,priorityScore,sbt,fts,caseOwner.name,needsN'
