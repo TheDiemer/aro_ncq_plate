@@ -1,3 +1,4 @@
+#! /opt/app-root/bin/python3
 import plate
 from flask import Flask, render_template, request, url_for
 app = Flask(__name__)

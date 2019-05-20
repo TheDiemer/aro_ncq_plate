@@ -1,3 +1,4 @@
+#! /opt/app-root/bin/python3
 import sys
 sys.path.append('/opt/app-root/src/config/')
 from sso import sso
