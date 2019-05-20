@@ -9,4 +9,5 @@ def index():
     return output
 
 if __name__ == '__main__':
-  app.run(host='aro-plate.b9ad.pro-us-east-1.openshiftapps.com',debug=True)
+  #app.run(host='aro-plate.b9ad.pro-us-east-1.openshiftapps.com',debug=True)
+  app.run(host='0.0.0.0',debug=True)
