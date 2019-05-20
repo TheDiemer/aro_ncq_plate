@@ -1,0 +1,20 @@
+{
+    "kind": "Route",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "plate",
+        "creationTimestamp": null,
+        "labels": {
+            "app": "aroplate"
+        }
+    },
+    "spec": {
+        "host": "aro-plate.b9ad.pro-us-east-1.openshiftapps.com",
+        "to": {
+            "kind": "Service",
+            "name": "aroplate",
+            "weight": 100
+        },
+        "wildcardPolicy": "None"
+    }
+}

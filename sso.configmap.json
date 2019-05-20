@@ -1,0 +1,10 @@
+{
+    "apiVersion": "v1",
+    "data": {
+        "sso.py": "username = '<SSO_USERNAME>'\npassword = '<SSO_PASSWORD>'\n"
+    },
+    "kind": "ConfigMap",
+    "metadata": {
+        "name": "sso"
+    }
+}
