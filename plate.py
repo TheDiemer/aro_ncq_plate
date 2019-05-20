@@ -32,7 +32,7 @@ def main():
         plate += 'apse;  }  th, td {   padding: 5px;  }  #value {   font-w'
         plate += 'eight: bold;  }\n </style>\n</head>\n<body>\n  <table>'
         plate = formatString(r.json(), plate)
-        plate += '\n  </table>\n</body>\n</html>'
+        plate += '\n  </table>\n <h3>This was collected at: {0} UTC<\h3>\n</body>\n</html>'.format(time.strftime("%Y/%m/%d - %H:%M:%s",time.gmtime()))
         return plate
     else:
         return failed()
