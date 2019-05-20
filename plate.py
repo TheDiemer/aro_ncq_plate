@@ -30,9 +30,9 @@ def main():
         plate = '<!doctype html>\n<html>\n<head>\n <style>\n  table, th,'
         plate += ' td {   border: 1px solid black;   border-collapse: coll'
         plate += 'apse;  }  th, td {   padding: 5px;  }  #value {   font-w'
-        plate += 'eight: bold;  }\n </style>\n</head>\n<body>\n  <table>'
+        plate += 'eight: bold;  }\n </style>\n</head>\n<body>\n  <h1>This is the current plate of ARO tagged cases:</h1>\n  <table>'
         plate = formatString(r.json(), plate)
-        plate += '\n  </table>\n <h3>This was collected at: {0} UTC<\h3>\n</body>\n</html>'.format(time.strftime("%Y/%m/%d - %H:%M:%s",time.gmtime()))
+        plate += '\n  </table>\n <h3>This was collected at: {0} UTC</h3>\n</body>\n</html>'.format(time.strftime("%Y/%m/%d - %H:%M:%s",time.gmtime()))
         return plate
     else:
         return failed()
