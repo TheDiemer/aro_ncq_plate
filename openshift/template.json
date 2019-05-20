@@ -131,7 +131,7 @@
                     "value": "${APP_CONFIG}",
 		    "ports": [
 		      {
-			      "containerPort": 8001,
+			      "containerPort": 5000,
 			      "protocol": "TCP"
 		      }
 	            ]
