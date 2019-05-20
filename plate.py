@@ -33,7 +33,7 @@ def main():
         plate += 'eight: bold;  }\n </style>\n</head>\n<body>\n  <table>'
         plate = formatString(r.json(), plate)
         plate += '\n  </table>\n</body>\n</html>'
-        print(plate)
+        return plate
     else:
         return failed()
 
